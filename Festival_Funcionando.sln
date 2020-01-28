@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Festival", "Festival.csproj", "{6B0CAA8C-20CE-4A98-9B1A-9072B504B1DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servidor", "Servidor\Servidor.csproj", "{673E003B-5AE3-4314-9117-1B24389DA244}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B0CAA8C-20CE-4A98-9B1A-9072B504B1DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B0CAA8C-20CE-4A98-9B1A-9072B504B1DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B0CAA8C-20CE-4A98-9B1A-9072B504B1DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B0CAA8C-20CE-4A98-9B1A-9072B504B1DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{673E003B-5AE3-4314-9117-1B24389DA244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{673E003B-5AE3-4314-9117-1B24389DA244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{673E003B-5AE3-4314-9117-1B24389DA244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{673E003B-5AE3-4314-9117-1B24389DA244}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA352635-899C-4334-8BD7-B649751F9201}
+	EndGlobalSection
+EndGlobal
