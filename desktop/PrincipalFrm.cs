@@ -45,5 +45,11 @@ namespace Festival.desktop
             ListaCategoria listaCategoria = new ListaCategoria();
             listaCategoria.Visible = true;
         }
+
+        private void cadastrarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            CantorFrm cantor = new CantorFrm();
+            cantor.Visible = true;
+        }
     }
 }

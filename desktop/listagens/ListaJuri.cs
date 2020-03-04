@@ -19,9 +19,9 @@ namespace Festival.listagens
             InitializeComponent();
 
             JuradoBo bo = new JuradoBo();
+            Jurado j = new Jurado();
             IList<Festival.or.Jurado> lista = bo.Listar();
             gridControl.RefreshDataSource();
-
             this.bindingSource.Clear();
             bindingSource.DataSource = lista;
             this.bindingSource.ResetBindings(true);

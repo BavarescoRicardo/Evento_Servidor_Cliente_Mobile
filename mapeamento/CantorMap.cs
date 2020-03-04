@@ -12,7 +12,6 @@
             Map(c => c.contato);
             Map(c => c.cpf);
             Map(c => c.rg);
-            Map(c => c.idade);
             Map(c => c.observacao);
             Table("cantor");
         } 

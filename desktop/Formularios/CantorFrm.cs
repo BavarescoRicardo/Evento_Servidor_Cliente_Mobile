@@ -26,29 +26,26 @@ namespace Festival.desktop
                 // Montar objeto Cantor
                 Festival.or.Cantor cantor= new Festival.or.Cantor();
                 cantor = (Festival.or.Cantor)bindingSourceCantor.Current;
+                
+                // Gravar cantor no banco
+                Festival.bo.CantorBo bo = new Festival.bo.CantorBo();
+                bindingSourceCantor.EndEdit();
+                bo.Inserir(cantor);
+
                 // Montar objeto Apresentação
                 Festival.or.Apresentacao apresentacao = new Festival.or.Apresentacao();
                 apresentacao = (Festival.or.Apresentacao)bindingSourceApresentacao.Current;
 
-                /* Gravar cantor no banco
-                Festival.bo.CantorBo bo = new Festival.bo.CantorBo();
-                bindingSourceCantor.EndEdit();
-                bo.Inserir(cantor);
-                MessageBox.Show("Inserido com sucesso");
-                */
                 // Gravar Apresentação no banco
                 Festival.bo.ApresentacaoBo apresentacaoBo = new Festival.bo.ApresentacaoBo();
                 bindingSourceApresentacao.EndEdit();
-                apresentacao.fk_categoria = new or.Categoria()
-                {
-                    id_categoria = 1,
-                    categoria = "sertanejo",
-                    dia = DateTime.Now
-                };
-                apresentacao.fk_cantor = cantor;
-
+                apresentacao.cantor = cantor.id_cantor;
+                apresentacao.categoria = 4;
                 apresentacaoBo.Inserir(apresentacao);
                 MessageBox.Show("Inserido com sucesso");
+
+                // Deveria fazer isto 
+                // INSERT INTO `evento`.`apresentacao` (`musica`, `artista`, `cantor`, `categoria`) VALUES ('simfonia da noite', 'cleiton rasta', '1', '3'); 
 
 
 

@@ -2,17 +2,13 @@
 using Festival.bo;
 using System.Collections.Generic;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
-using Servidor.Models;
-using System.Windows.Forms;
+using System.Xml;
 
 namespace Servidor.Controllers
 {
-    // url              http://localhost:49890/api/juri          post http://localhost:49890/api/juri?nota=7.4      get http://localhost:49890/api/juri
+    // url              http://localhost:50030/api/juri          post http://localhost:50030/api/juri?nota=7.4      get http://localhost:49890/api/juri
 
     public class juriController : ApiController
     {
@@ -28,9 +24,9 @@ namespace Servidor.Controllers
             return juri;
         }
 
-        public void Post(double nota)
+        public void Post(string JsonSerializer)
         {
-            MessageBox.Show(nota.ToString());
+
         }
     }
 }

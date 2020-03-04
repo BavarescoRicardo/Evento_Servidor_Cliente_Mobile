@@ -24,8 +24,6 @@
             fonteDadosBinding.DataSource = lista;
             this.fonteDadosBinding.ResetBindings(true);
             gridControl.Refresh();
-            
-
         }
     }
 }
